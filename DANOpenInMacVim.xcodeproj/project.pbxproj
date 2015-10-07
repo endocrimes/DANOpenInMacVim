@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65AF96C91BC5799300DCD9F2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AF96C81BC5799300DCD9F2 /* AppKit.framework */; settings = {ASSET_TAGS = (); }; };
+		65AF96CB1BC5799300DCD9F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AF96CA1BC5799300DCD9F2 /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
+		65AF96CF1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 65AF96CE1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme */; };
+		65AF96D21BC5799300DCD9F2 /* DANOpenInMacVim.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AF96D11BC5799300DCD9F2 /* DANOpenInMacVim.m */; };
+		65AF96D51BC5799300DCD9F2 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AF96D41BC5799300DCD9F2 /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65AF96C51BC5799300DCD9F2 /* DANOpenInMacVim.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DANOpenInMacVim.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AF96C81BC5799300DCD9F2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		65AF96CA1BC5799300DCD9F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		65AF96CE1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = DANOpenInMacVim.xcscheme; path = DANOpenInMacVim.xcodeproj/xcshareddata/xcschemes/DANOpenInMacVim.xcscheme; sourceTree = SOURCE_ROOT; };
+		65AF96D01BC5799300DCD9F2 /* DANOpenInMacVim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DANOpenInMacVim.h; sourceTree = "<group>"; };
+		65AF96D11BC5799300DCD9F2 /* DANOpenInMacVim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DANOpenInMacVim.m; sourceTree = "<group>"; };
+		65AF96D31BC5799300DCD9F2 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		65AF96D41BC5799300DCD9F2 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		65AF96D61BC5799300DCD9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65AF96C31BC5799300DCD9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65AF96C91BC5799300DCD9F2 /* AppKit.framework in Frameworks */,
+				65AF96CB1BC5799300DCD9F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65AF96BC1BC5799300DCD9F2 = {
+			isa = PBXGroup;
+			children = (
+				65AF96CC1BC5799300DCD9F2 /* DANOpenInMacVim */,
+				65AF96C71BC5799300DCD9F2 /* Frameworks */,
+				65AF96C61BC5799300DCD9F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65AF96C61BC5799300DCD9F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65AF96C51BC5799300DCD9F2 /* DANOpenInMacVim.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65AF96C71BC5799300DCD9F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65AF96C81BC5799300DCD9F2 /* AppKit.framework */,
+				65AF96CA1BC5799300DCD9F2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65AF96CC1BC5799300DCD9F2 /* DANOpenInMacVim */ = {
+			isa = PBXGroup;
+			children = (
+				65AF96D01BC5799300DCD9F2 /* DANOpenInMacVim.h */,
+				65AF96D11BC5799300DCD9F2 /* DANOpenInMacVim.m */,
+				65AF96D31BC5799300DCD9F2 /* NSObject_Extension.h */,
+				65AF96D41BC5799300DCD9F2 /* NSObject_Extension.m */,
+				65AF96D61BC5799300DCD9F2 /* Info.plist */,
+				65AF96CD1BC5799300DCD9F2 /* Supporting Files */,
+			);
+			path = DANOpenInMacVim;
+			sourceTree = "<group>";
+		};
+		65AF96CD1BC5799300DCD9F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65AF96CE1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65AF96C41BC5799300DCD9F2 /* DANOpenInMacVim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65AF96D91BC5799300DCD9F2 /* Build configuration list for PBXNativeTarget "DANOpenInMacVim" */;
+			buildPhases = (
+				65AF96C11BC5799300DCD9F2 /* Sources */,
+				65AF96C21BC5799300DCD9F2 /* Resources */,
+				65AF96C31BC5799300DCD9F2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DANOpenInMacVim;
+			productName = DANOpenInMacVim;
+			productReference = 65AF96C51BC5799300DCD9F2 /* DANOpenInMacVim.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65AF96BD1BC5799300DCD9F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rocket Apps";
+				TargetAttributes = {
+					65AF96C41BC5799300DCD9F2 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 65AF96C01BC5799300DCD9F2 /* Build configuration list for PBXProject "DANOpenInMacVim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65AF96BC1BC5799300DCD9F2;
+			productRefGroup = 65AF96C61BC5799300DCD9F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65AF96C41BC5799300DCD9F2 /* DANOpenInMacVim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65AF96C21BC5799300DCD9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65AF96CF1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65AF96C11BC5799300DCD9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65AF96D21BC5799300DCD9F2 /* DANOpenInMacVim.m in Sources */,
+				65AF96D51BC5799300DCD9F2 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		65AF96D71BC5799300DCD9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		65AF96D81BC5799300DCD9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		65AF96DA1BC5799300DCD9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = DANOpenInMacVim/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.DANOpenInMacVim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		65AF96DB1BC5799300DCD9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = DANOpenInMacVim/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.DANOpenInMacVim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65AF96C01BC5799300DCD9F2 /* Build configuration list for PBXProject "DANOpenInMacVim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65AF96D71BC5799300DCD9F2 /* Debug */,
+				65AF96D81BC5799300DCD9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65AF96D91BC5799300DCD9F2 /* Build configuration list for PBXNativeTarget "DANOpenInMacVim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65AF96DA1BC5799300DCD9F2 /* Debug */,
+				65AF96DB1BC5799300DCD9F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65AF96BD1BC5799300DCD9F2 /* Project object */;
+}
