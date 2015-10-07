@@ -8,14 +8,5 @@
 
 #import <AppKit/AppKit.h>
 
-@class DANOpenInMacVim;
-
-static DANOpenInMacVim *sharedPlugin;
-
 @interface DANOpenInMacVim : NSObject
-
-+ (instancetype)sharedPlugin;
-- (id)initWithBundle:(NSBundle *)plugin;
-
-@property (nonatomic, strong, readonly) NSBundle* bundle;
 @end

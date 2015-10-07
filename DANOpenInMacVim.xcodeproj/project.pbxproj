@@ -11,7 +11,6 @@
 		65AF96CB1BC5799300DCD9F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AF96CA1BC5799300DCD9F2 /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
 		65AF96CF1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 65AF96CE1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme */; };
 		65AF96D21BC5799300DCD9F2 /* DANOpenInMacVim.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AF96D11BC5799300DCD9F2 /* DANOpenInMacVim.m */; };
-		65AF96D51BC5799300DCD9F2 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AF96D41BC5799300DCD9F2 /* NSObject_Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +20,8 @@
 		65AF96CE1BC5799300DCD9F2 /* DANOpenInMacVim.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = DANOpenInMacVim.xcscheme; path = DANOpenInMacVim.xcodeproj/xcshareddata/xcschemes/DANOpenInMacVim.xcscheme; sourceTree = SOURCE_ROOT; };
 		65AF96D01BC5799300DCD9F2 /* DANOpenInMacVim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DANOpenInMacVim.h; sourceTree = "<group>"; };
 		65AF96D11BC5799300DCD9F2 /* DANOpenInMacVim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DANOpenInMacVim.m; sourceTree = "<group>"; };
-		65AF96D31BC5799300DCD9F2 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
-		65AF96D41BC5799300DCD9F2 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		65AF96D61BC5799300DCD9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65AF96DC1BC57F9D00DCD9F2 /* DANXcodePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DANXcodePrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				65AF96D01BC5799300DCD9F2 /* DANOpenInMacVim.h */,
+				65AF96DC1BC57F9D00DCD9F2 /* DANXcodePrivate.h */,
 				65AF96D11BC5799300DCD9F2 /* DANOpenInMacVim.m */,
-				65AF96D31BC5799300DCD9F2 /* NSObject_Extension.h */,
-				65AF96D41BC5799300DCD9F2 /* NSObject_Extension.m */,
 				65AF96D61BC5799300DCD9F2 /* Info.plist */,
 				65AF96CD1BC5799300DCD9F2 /* Supporting Files */,
 			);
@@ -154,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65AF96D21BC5799300DCD9F2 /* DANOpenInMacVim.m in Sources */,
-				65AF96D51BC5799300DCD9F2 /* NSObject_Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +279,7 @@
 				65AF96DB1BC5799300DCD9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
