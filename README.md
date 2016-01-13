@@ -7,3 +7,7 @@ of Xcode internals from https://github.com/benoitsan/BBUncrustifyPlugin-Xcode.
 ## Installation
 
 DANOpenInMacVim can be installed with [Alcatraz](http://alcatraz.io) or clone the repo and build the plugin.
+
+## Usage
+
+Hit command+control+v when selecting a file.
