@@ -62,11 +62,10 @@ static DANOpenInMacVim *sharedPlugin;
 - (void)openInMacVim:(id)sender {
     NSURL *currentFileURL = [self currentProjectURL];
     if (currentFileURL) {
-        [[NSWorkspace sharedWorkspace] openURLs:@[currentFileURL]
-                        withAppBundleIdentifier:@"org.vim.MacVim"
-                                        options:0
-                 additionalEventParamDescriptor:nil
-                              launchIdentifiers:nil];
+        NSTask *task = [[NSTask alloc] init];
+        task.launchPath = @"/usr/local/bin/gvim";
+        task.arguments = @[ @"--servername", @"xcode", @"--remote-tab-silent", [currentFileURL path] ];
+        [task launch];
     }
 }
 
