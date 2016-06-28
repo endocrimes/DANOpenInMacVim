@@ -11,3 +11,5 @@ DANOpenInMacVim can be installed with [Alcatraz](http://alcatraz.io) or clone th
 ## Usage
 
 Hit command+control+v when selecting a file.
+
+We use /usr/local/bin/gvim for MacVim, make sure you have /usr/local/bin/gvim linked to MacVim's script.
