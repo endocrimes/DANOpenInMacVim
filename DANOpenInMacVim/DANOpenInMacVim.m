@@ -12,7 +12,11 @@
 static DANOpenInMacVim *sharedPlugin;
 
 @interface DANOpenInMacVim()
+
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic, assign) NSUInteger column;
+@property (nonatomic, assign) NSUInteger row;
+
 @end
 
 @implementation DANOpenInMacVim
@@ -37,12 +41,46 @@ static DANOpenInMacVim *sharedPlugin;
     if (self) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self setup];
+
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChangeNotification:)
+                                                         name:NSTextViewDidChangeSelectionNotification object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChangeNotification:)
+                                                         name:NSTextDidChangeNotification object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChangeNotification:)
+                                                         name:NSTextDidBeginEditingNotification object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewDidChangeNotification:)
+                                                         name:NSTextDidEndEditingNotification object:nil];
         });
     }
     
     return self;
 }
 
+#pragma -mark Listen Notification
+
+- (void)textViewDidChangeNotification:(NSNotification *)noti {
+    id firstResponder = [[NSApp keyWindow] firstResponder];
+
+    if (![firstResponder isKindOfClass:NSClassFromString(@"DVTSourceTextView")]) return;
+
+    NSTextView *textView = (NSTextView *)firstResponder;
+    NSRange selectedRange = [textView selectedRange];
+    NSString *viewContent = [textView string];
+
+    NSRange lineRange = [viewContent lineRangeForRange:NSMakeRange(selectedRange.location,0)];
+    NSUInteger column = selectedRange.location - lineRange.location;
+
+    // Calculate current line number
+    __block NSUInteger lineNumber = 0;
+    [[viewContent substringToIndex:selectedRange.location] enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+        ++lineNumber;
+    }];
+
+    self.row = lineNumber;
+    self.column = column;
+}
+
+#pragma -mark Initialization
 - (void)setup {
     // Add menu bar items for the 'Show Project in Finder' and 'Open Project in Terminal' actions
     NSMenu *fileMenu = [[[NSApp mainMenu] itemWithTitle:@"File"] submenu];
@@ -59,12 +97,14 @@ static DANOpenInMacVim *sharedPlugin;
     }
 }
 
+#pragma --mark Files
 - (void)openInMacVim:(id)sender {
     NSURL *currentFileURL = [self currentProjectURL];
     if (currentFileURL) {
+        NSString *cursor = [NSString stringWithFormat:@"+call cursor(%lu, %lu)", self.row, self.column];
         NSTask *task = [[NSTask alloc] init];
         task.launchPath = @"/usr/local/bin/gvim";
-        task.arguments = @[ @"--servername", @"xcode", @"--remote-tab-silent", [currentFileURL path] ];
+        task.arguments = @[ @"--servername", @"xcode", @"--remote-tab-silent", cursor, [currentFileURL path] ];
         [task launch];
     }
 }
